@@ -1,0 +1,1812 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reconfiguración Cultural y Liderazgo en República Dominicana 2020-2025</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --secondary: #34495e;
+            --accent: #e67e22;
+            --neutral: #95a5a6;
+            --base-100: #ffffff;
+            --base-200: #f8f9fa;
+            --base-300: #e9ecef;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--primary);
+            background: var(--base-100);
+            overflow-x: hidden;
+        }
+        
+        .serif {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .toc-fixed {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 280px;
+            height: 100vh;
+            background: var(--base-200);
+            border-right: 1px solid var(--base-300);
+            z-index: 1000;
+            overflow-y: auto;
+            padding: 2rem 1.5rem;
+        }
+        
+        .main-content {
+            margin-left: 280px;
+            min-height: 100vh;
+        }
+        
+        .section-anchor {
+            scroll-margin-top: 2rem;
+        }
+        
+        .citation-link {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 500;
+            border-bottom: 1px dotted var(--accent);
+        }
+        
+        .citation-link:hover {
+            border-bottom-style: solid;
+        }
+        
+        .bento-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            grid-template-rows: auto auto;
+            gap: 1.5rem;
+            height: 60vh;
+        }
+        
+        .bento-item-1 {
+            grid-column: 1 / 2;
+            grid-row: 1 / 3;
+        }
+        
+        .bento-item-2 {
+            grid-column: 2 / 3;
+            grid-row: 1 / 2;
+        }
+        
+        .bento-item-3 {
+            grid-column: 2 / 3;
+            grid-row: 2 / 3;
+        }
+        
+        @media (max-width: 1024px) {
+            .toc-fixed {
+                transform: translateX(-100%);
+                transition: transform 0.3s ease;
+            }
+            
+            .toc-fixed.open {
+                transform: translateX(0);
+            }
+            
+            .main-content {
+                margin-left: 0;
+            }
+            
+            .bento-grid {
+                grid-template-columns: 1fr;
+                grid-template-rows: auto auto auto;
+                height: auto;
+            }
+            
+            .bento-item-1,
+            .bento-item-2,
+            .bento-item-3 {
+                grid-column: 1;
+                grid-row: auto;
+            }
+        }
+
+        /* Adjustments for small screens */
+        @media (max-width: 768px) {
+            .px-6 {
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+
+            .bento-grid > * {
+                padding: 1rem;
+            }
+
+            .bento-item-1 h1 {
+                font-size: 1.5rem;
+            }
+
+            .bento-item-1 p {
+                font-size: 0.9rem;
+            }
+
+            .max-w-4xl, .max-w-6xl {
+                max-width: 100%;
+            }
+
+            .overflow-x-auto {
+                overflow-x: auto;
+            }
+        }
+
+        @media (max-width: 390px) {
+            .bento-item-1 h1 {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+  </head>
+
+  <body>
+    <!-- Table of Contents -->
+    <nav class="toc-fixed">
+      <div class="mb-8">
+        <h3 class="serif text-lg font-bold text-gray-800 mb-4">Índice</h3>
+        <ul class="space-y-2 text-sm">
+          <li>
+            <a href="#executive-summary" class="block py-1 px-2 rounded hover:bg-gray-200 transition-colors">Resumen Ejecutivo</a>
+          </li>
+          <li>
+            <a href="#scope" class="block py-1 px-2 rounded hover:bg-gray-200 transition-colors">Alcance y Metodología</a>
+          </li>
+          <li>
+            <a href="#methodology" class="block py-1 px-2 rounded hover:bg-gray-200 transition-colors">Marco Metodológico</a>
+          </li>
+          <li>
+            <a href="#evolution-2020" class="block py-1 px-2 rounded hover:bg-gray-200 transition-colors">Evolución 2020-2025</a>
+          </li>
+          <li>
+            <a href="#abinader-positioning" class="block py-1 px-2 rounded hover:bg-gray-200 transition-colors">Posicionamiento Presidencial</a>
+          </li>
+          <li>
+            <a href="#social-processes" class="block py-1 px-2 rounded hover:bg-gray-200 transition-colors">Procesos Sociales</a>
+          </li>
+          <li>
+            <a href="#political-parties" class="block py-1 px-2 rounded hover:bg-gray-200 transition-colors">Partidos y Confianza</a>
+          </li>
+          <li>
+            <a href="#segmentation" class="block py-1 px-2 rounded hover:bg-gray-200 transition-colors">Segmentación y Audiencias</a>
+          </li>
+          <li>
+            <a href="#territorial-dynamics" class="block py-1 px-2 rounded hover:bg-gray-200 transition-colors">Dinámicas Territoriales</a>
+          </li>
+          <li>
+            <a href="#scenarios" class="block py-1 px-2 rounded hover:bg-gray-200 transition-colors">Escenarios Prospectivos</a>
+          </li>
+          <li>
+            <a href="#legacy" class="block py-1 px-2 rounded hover:bg-gray-200 transition-colors">Legado Potencial</a>
+          </li>
+          <li>
+            <a href="#implications" class="block py-1 px-2 rounded hover:bg-gray-200 transition-colors">Implicaciones Estratégicas</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Hero Section -->
+      <section class="hero-gradient text-white relative overflow-hidden">
+        <div class="absolute inset-0 bg-black bg-opacity-20"></div>
+        <div class="relative z-10 px-6 py-12">
+          <div class="max-w-6xl mx-auto">
+            <div class="bento-grid">
+              <div class="bento-item-1 flex flex-col justify-center p-8 bg-black bg-opacity-30 rounded-lg">
+                <h1 class="serif text-3xl lg:text-4xl font-bold italic mb-4">
+                  Reconfiguración Cultural y
+                  <br>
+                  <span class="text-orange-300">Liderazgo Estratégico</span>
+                  <br>
+                  en República Dominicana
+                </h1>
+                <p class="text-lg lg:text-xl opacity-90 mb-6">
+                  Análisis longitudinal del posicionamiento político y percepción social 2020-2025
+                </p>
+                <div class="flex items-center space-x-4 text-sm opacity-75">
+                  <span><i class="fas fa-calendar mr-2"></i>2020-2025</span>
+                  <span><i class="fas fa-map-marker-alt mr-2"></i>República Dominicana</span>
+                  <span><i class="fas fa-chart-line mr-2"></i>Análisis Estratégico</span>
+                </div>
+              </div>
+
+              <div class="bento-item-2 bg-white bg-opacity-20 backdrop-blur-sm rounded-lg p-6 flex flex-col justify-center">
+                <h3 class="serif text-lg font-bold mb-3">Hallazgos Clave</h3>
+                <ul class="space-y-2 text-sm">
+                  <li class="flex items-start">
+                    <i class="fas fa-arrow-right text-orange-300 mt-1 mr-2"></i>
+                    <span>Transición de liderazgo: de gestor protector a catalizador de responsabilidad cívica</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i class="fas fa-arrow-right text-orange-300 mt-1 mr-2"></i>
+                    <span>Consolidación del "derecho a la alegría y la libertad" como núcleo identitario</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="bento-item-3 bg-white bg-opacity-20 backdrop-blur-sm rounded-lg p-6 flex flex-col justify-center">
+                <h3 class="serif text-lg font-bold mb-3">Metodología</h3>
+                <p class="text-sm opacity-90">
+                  Análisis integrado LCI+LOCUS con tres capas de diagnóstico social y segmentación por creencias
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Executive Summary -->
+      <section id="executive-summary" class="section-anchor py-16 px-6 bg-gray-50">
+        <div class="max-w-4xl mx-auto">
+          <h2 class="serif text-3xl font-bold mb-8 text-center">Resumen Ejecutivo</h2>
+
+          <div class="grid md:grid-cols-2 gap-8 mb-12">
+            <div class="bg-white p-6 rounded-lg shadow-sm">
+              <h3 class="serif text-xl font-bold mb-4 text-orange-600">Principales Hallazgos</h3>
+              <ul class="space-y-3 text-sm">
+                <li class="flex items-start">
+                  <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                  <span>Transición del liderazgo presidencial desde <strong>"gestor protector en crisis"</strong> hacia <strong>"catalizador de responsabilidad cívica"</strong>, especialmente en audiencias jóvenes urbanas (<35 años)</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                  <span>La identidad anímica dominicana —comunidad, placer compartido, espacio público y fe— actúa como <strong>regulador del ánimo social</strong> y marco de lectura política</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                  <span>En 2021 se instala el <strong>"derecho a la alegría y la libertad"</strong> como núcleo valorativo, coexistiendo con autocrítica sobre desorden/indulgencia</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-sm">
+              <h3 class="serif text-xl font-bold mb-4 text-blue-600">Tesis Central vs. Contra-tesis</h3>
+              <div class="space-y-4 text-sm">
+                <div>
+                  <h4 class="font-semibold text-green-700 mb-2">Tesis Central</h4>
+                  <p>El ciclo 2020→2025 describe una <strong>reconfiguración cultural</strong> que favorece liderazgos capaces de ordenar sin autoritarismo y activar agencia ciudadana. El posicionamiento de Luis Abinader se fortalece cuando su figura pasa de gestor de coyunturas excepcionales a habilitador de responsabilidad y logro.</p>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-red-700 mb-2">Contra-tesis</h4>
+                  <p>La misma reconfiguración convive con riesgos: lectura de <strong>indolencia o aislamiento</strong> del líder si no hay avances tangibles en seguridad/migración/corrupción intermedia; disociación Presidente–Gobierno que erosiona la promesa de cambio.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-gradient-to-r from-blue-50 to-orange-50 p-6 rounded-lg">
+            <h3 class="serif text-xl font-bold mb-4">Implicaciones Estratégicas</h3>
+            <div class="grid md:grid-cols-2 gap-6 text-sm">
+              <div>
+                <h4 class="font-semibold mb-2 text-blue-700">Eje de Resultados Cotidianos</h4>
+                <p>La trayectoria de legitimidad depende de señales verificables en dos umbrales de alivio: ingreso/empleo formal y seguridad con eficacia/legalidad</p>
+              </div>
+              <div>
+                <h4 class="font-semibold mb-2 text-orange-700">Ruta 24 como Política de Cultura Cívica</h4>
+                <p>La narrativa de responsabilidad personal en jóvenes requiere anclaje institucional (reglas claras, incentivos y consistencia comunicativa)</p>
+              </div>
+              <div>
+                <h4 class="font-semibold mb-2 text-green-700">Cerrar la Brecha Presidente–Gobierno</h4>
+                <p>Reducir el "cuello de ejecución" que la ciudadanía percibe entre la figura presidencial y equipos intermedios</p>
+              </div>
+              <div>
+                <h4 class="font-semibold mb-2 text-purple-700">Turismo como Palanca de Legado</h4>
+                <p>El círculo: reputación-país → empleo/ingreso → confianza sistémica → consolidación de reglas</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Scope and Methodology -->
+      <section id="scope" class="section-anchor py-16 px-6">
+        <div class="max-w-4xl mx-auto">
+          <h2 class="serif text-3xl font-bold mb-8">Alcance, Preguntas y Diseño de la Revisión</h2>
+
+          <div class="grid md:grid-cols-3 gap-6 mb-12">
+            <div class="bg-white p-6 rounded-lg shadow-sm border-l-4 border-blue-500">
+              <h3 class="font-bold text-lg mb-3 text-blue-700">Objetivo Central</h3>
+              <p class="text-sm">Reconstruir el proceso de posicionamiento político y percepción social de Luis Abinader (2020–2025), articulando coyunturas críticas con procesos sociales, culturales y psico-políticos</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-sm border-l-4 border-green-500">
+              <h3 class="font-bold text-lg mb-3 text-green-700">Unidades de Observación</h3>
+              <ul class="text-sm space-y-1">
+                <li>• Nivel individual: ciudadanos segmentados</li>
+                <li>• Nivel colectivo: partidos y liderazgos</li>
+                <li>• Nivel sistémico: gobierno e instituciones</li>
+              </ul>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-sm border-l-4 border-orange-500">
+              <h3 class="font-bold text-lg mb-3 text-orange-700">Períodos Clave</h3>
+              <ul class="text-sm space-y-1">
+                <li>• <strong>2020:</strong> Pandemia y protección</li>
+                <li>• <strong>2021:</strong> Identidad y alegría</li>
+                <li>• <strong>2022:</strong> Reforma y seguridad</li>
+                <li>• <strong>2024:</strong> Ruta 24 y responsabilidad</li>
+                <li>• <strong>2025:</strong> Turismo y legado</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="bg-gray-50 p-6 rounded-lg">
+            <h3 class="serif text-xl font-bold mb-4">Definiciones Operativas Clave</h3>
+            <div class="grid md:grid-cols-2 gap-6 text-sm">
+              <div>
+                <h4 class="font-semibold mb-2">Imagen</h4>
+                <p>Conjunto de atributos, percepciones y emociones que los ciudadanos asocian con un líder, partido o institución en un momento dado</p>
+
+                <h4 class="font-semibold mb-2 mt-4">Posicionamiento</h4>
+                <p>Proceso dinámico de sedimentación de la imagen en el tiempo, en relación con coyunturas críticas y comparaciones frente a otros actores políticos</p>
+              </div>
+              <div>
+                <h4 class="font-semibold mb-2">Legado</h4>
+                <p>Síntesis de atributos, logros y cambios culturales/institucionales que permanecen más allá del ciclo inmediato de gobierno</p>
+
+                <h4 class="font-semibold mb-2 mt-4">Trayectorias</h4>
+                <p>Secuencias longitudinales de transformación de imagen/posicionamiento en respuesta a coyunturas (crisis, reformas, escándalos, éxitos)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Methodology -->
+      <section id="methodology" class="section-anchor py-16 px-6 bg-gray-50">
+        <div class="max-w-4xl mx-auto">
+          <h2 class="serif text-3xl font-bold mb-8">Marco Metodológico Integrado (LCI + LOCUS)</h2>
+
+          <div class="mb-12">
+            <h3 class="serif text-2xl font-bold mb-6">Tres Niveles de Diagnóstico Social</h3>
+            <div class="space-y-6">
+              <div class="bg-white p-6 rounded-lg shadow-sm">
+                <h4 class="font-bold text-lg mb-3 text-blue-700">1. Opinión Pública / Identidad Política (Capa Superficial)</h4>
+                <p class="text-sm mb-3">Captura los juicios inmediatos, expresiones de apoyo/rechazo y expectativas declaradas. Es el nivel más volátil, sensible a coyunturas y a la comunicación mediática.</p>
+                <div class="text-xs text-gray-600">
+                  <strong>Herramientas:</strong> Grupos focales, encuestas rápidas, análisis de redes sociales
+                </div>
+              </div>
+
+              <div class="bg-white p-6 rounded-lg shadow-sm">
+                <h4 class="font-bold text-lg mb-3 text-green-700">2. Conflictos Sistémicos / Problemas Estructurales (Capa Intermedia)</h4>
+                <p class="text-sm mb-3">Incluye las grandes problemáticas que persisten: pobreza, corrupción, empleo, seguridad, migración, precios. Opera como filtro de credibilidad.</p>
+                <div class="text-xs text-gray-600">
+                  <strong>Herramientas:</strong> Entrevistas en profundidad, cartografía perceptual de problemáticas
+                </div>
+              </div>
+
+              <div class="bg-white p-6 rounded-lg shadow-sm">
+                <h4 class="font-bold text-lg mb-3 text-purple-700">3. Capas Psico-Culturales / Arquetipos Colectivos (Capa Profunda)</h4>
+                <p class="text-sm mb-3">Explora imaginarios, símbolos y emociones que organizan la percepción política. Emergen arquetipos codificados para la realidad dominicana.</p>
+                <div class="text-xs text-gray-600">
+                  <strong>Herramientas:</strong> Técnicas proyectivas, análisis de metáforas, etnografía psico-cultural
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow-sm mb-8">
+            <h3 class="serif text-2xl font-bold mb-6">Matriz LOCUS® Aplicada</h3>
+            <div class="grid md:grid-cols-2 gap-8">
+              <div>
+                <h4 class="font-bold mb-4">Ejes de Análisis</h4>
+                <div class="space-y-3 text-sm">
+                  <div class="flex items-start">
+                    <div class="w-3 h-3 bg-blue-500 rounded-full mt-1 mr-3"></div>
+                    <div>
+                      <strong>Subjetivo:</strong> Creencias sobre valores, principios y visiones de país
+                    </div>
+                  </div>
+                  <div class="flex items-start">
+                    <div class="w-3 h-3 bg-orange-500 rounded-full mt-1 mr-3"></div>
+                    <div>
+                      <strong>Objetivo:</strong> Percepciones sobre actores, partidos, instituciones
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <h4 class="font-bold mb-4">Cuadrantes y Segmentos</h4>
+                <div class="space-y-2 text-xs">
+                  <div class="bg-red-100 p-2 rounded">
+                    <strong>Transformadores (T):</strong> Cambio subjetivo y objetivo
+                  </div>
+                  <div class="bg-yellow-100 p-2 rounded">
+                    <strong>Exploradores (E):</strong> Mantienen valores, piden nuevos actores
+                  </div>
+                  <div class="bg-green-100 p-2 rounded">
+                    <strong>Renovadores (R):</strong> Cambio en valores, confían en actores actuales
+                  </div>
+                  <div class="bg-blue-100 p-2 rounded">
+                    <strong>Preservadores (P):</strong> No demandan cambios
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-gradient-to-r from-blue-50 to-purple-50 p-6 rounded-lg">
+            <h3 class="serif text-xl font-bold mb-4">Conceptos LCI Clave Aplicados</h3>
+            <div class="grid md:grid-cols-2 gap-6 text-sm">
+              <div>
+                <h4 class="font-semibold mb-2">EgoLocalización Sistémica (2020)</h4>
+                <p>Mide cómo los ciudadanos se ubican frente al sistema político y económico: integración, distancia o resistencia</p>
+              </div>
+              <div>
+                <h4 class="font-semibold mb-2">Imaginario del Presidente Ideal (2020)</h4>
+                <p>Herramienta proyectiva que revela expectativas de atributos presidenciales: cercanía, orden, empatía, ética</p>
+              </div>
+              <div>
+                <h4 class="font-semibold mb-2">Niveles de Responsabilidad (2022)</h4>
+                <p>Modelo escalonado: Denuncia → Reflexión → Disposición (compartir cargas y corresponsabilidad)</p>
+              </div>
+              <div>
+                <h4 class="font-semibold mb-2">Segmentación por Creencias – Ruta 24 (2024)</h4>
+                <p>Clasificación en cuatro sistemas: Atracción, Autoridad, Juicio, Responsabilidad</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Evolution 2020-2025 -->
+      <section id="evolution-2020" class="section-anchor py-16 px-6">
+        <div class="max-w-4xl mx-auto">
+          <h2 class="serif text-3xl font-bold mb-8">Evolución del Contexto Político-Social 2020-2025</h2>
+
+          <div class="space-y-8">
+            <!-- 2020 -->
+            <div class="bg-white p-6 rounded-lg shadow-sm border-l-4 border-blue-500">
+              <h3 class="serif text-xl font-bold mb-4 text-blue-700">2020: Pandemia, "Nuevo Cotidiano" y Erosión de Vínculos</h3>
+              <div class="grid md:grid-cols-2 gap-6 text-sm">
+                <div>
+                  <h4 class="font-semibold mb-2">Contexto Pandémico</h4>
+                  <p>La irrupción del COVID-19 transformó la vida cotidiana y puso a prueba la relación ciudadano-Estado. Encierro y crisis sanitaria activaron dependencia del gobierno y erosión de confianza en estructuras sistémicas</p>
+
+                  <h4 class="font-semibold mb-2 mt-4">Roles Emergentes</h4>
+                  <p>Expectativa de que el presidente asuma rol de <strong>Protector-Ordenador</strong>, equilibrando cuidado sanitario con continuidad económica</p>
+                </div>
+                <div>
+                  <h4 class="font-semibold mb-2">EgoLocalización Sistémica</h4>
+                  <p>Muchos dominicanos se percibieron "fuera" o "en los márgenes" del sistema, generando sensación de vulnerabilidad</p>
+
+                  <h4 class="font-semibold mb-2 mt-4">Imaginario del Presidente Ideal</h4>
+                  <p>Figura cercana, ética, empática, pero capaz de imponer orden y dar confianza informativa frente a incertidumbre</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- 2021 -->
+            <div class="bg-white p-6 rounded-lg shadow-sm border-l-4 border-green-500">
+              <h3 class="serif text-xl font-bold mb-4 text-green-700">2021: Doble Coyuntura Sanitaria-Económica e Identidad</h3>
+              <div class="grid md:grid-cols-3 gap-4 text-sm">
+                <div class="bg-green-50 p-4 rounded">
+                  <h4 class="font-semibold mb-2">Crisis Entrelazada</h4>
+                  <p>Impacto prolongado de pandemia + fragilidad económica = "doble crisis" que obligaba a reacomodar prioridades</p>
+                </div>
+                <div class="bg-orange-50 p-4 rounded">
+                  <h4 class="font-semibold mb-2">Identidad Cultural</h4>
+                  <p>Consolidación del <strong>"derecho a la alegría y la libertad"</strong> como núcleo anímico de la identidad colectiva</p>
+                </div>
+                <div class="bg-red-50 p-4 rounded">
+                  <h4 class="font-semibold mb-2">Riesgos de Erosión</h4>
+                  <p>Dudas sobre capacidad de transformar estructuras profundas (empleo, servicios, corrupción)</p>
+                </div>
+              </div>
+              <div class="mt-4 p-4 bg-gray-50 rounded">
+                <h4 class="font-semibold mb-2">Síntesis Arquetípica</h4>
+                <p>Abinader encarnaba un <strong>líder ético y protector</strong>, con sombra de "Inocente" (bondad que puede volverse debilidad si no se traduce en eficacia)</p>
+              </div>
+            </div>
+
+            <!-- 2022 -->
+            <div class="bg-white p-6 rounded-lg shadow-sm border-l-4 border-red-500">
+              <h3 class="serif text-xl font-bold mb-4 text-red-700">2022: Problemáticas Estructurales y Reforma</h3>
+              <div class="grid md:grid-cols-2 gap-6 text-sm">
+                <div>
+                  <h4 class="font-semibold mb-2">Ejes Problemáticos</h4>
+                  <p>Pobreza, corrupción, seguridad, migración y precios emergieron como problemas estructurales que organizaban el malestar</p>
+
+                  <h4 class="font-semibold mb-2 mt-4">Reforma Policial</h4>
+                  <p>La ciudadanía colocó la reforma policial como <strong>prueba central de capacidad de mando</strong> y de orden, como "termómetro" presidencial</p>
+                </div>
+                <div>
+                  <h4 class="font-semibold mb-2">Eje de Responsabilidad</h4>
+                  <p>Tránsito parcial hacia mayor disposición ciudadana a compartir cargas, aunque la expectativa central seguía anclada en el presidente como ejecutor</p>
+
+                  <h4 class="font-semibold mb-2 mt-4">Arquetipo Dominante</h4>
+                  <p><strong>Inocente moral</strong> que lucha contra fuerzas corruptas, pero bajo crítica de que "le falta malicia" para imponerse frente al desorden</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- 2024 -->
+            <div class="bg-white p-6 rounded-lg shadow-sm border-l-4 border-purple-500">
+              <h3 class="serif text-xl font-bold mb-4 text-purple-700">2024: "Cambio Cultural" y Transferencia de Responsabilidad</h3>
+              <div class="grid md:grid-cols-3 gap-4 text-sm">
+                <div class="bg-purple-50 p-4 rounded">
+                  <h4 class="font-semibold mb-2">Cambio Cultural Juvenil</h4>
+                  <p>Viraje discursivo en <strong>audiencias <35 años</strong>: liderazgo ya no debe ser sólo protector, sino habilitador de responsabilidad personal</p>
+                </div>
+                <div class="bg-blue-50 p-4 rounded">
+                  <h4 class="font-semibold mb-2">Transferencia de Responsabilidad</h4>
+                  <p>Los jóvenes validan que prosperidad y orden dependen de la agencia individual, siempre que el Estado asegure reglas claras</p>
+                </div>
+                <div class="bg-green-50 p-4 rounded">
+                  <h4 class="font-semibold mb-2">Segmentación por Creencias</h4>
+                  <p>Ciudadanía distribuida en sistemas: Atracción, Autoridad, Juicio, Responsabilidad (éste último emergente en juventud)</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- 2025 -->
+            <div class="bg-white p-6 rounded-lg shadow-sm border-l-4 border-orange-500">
+              <h3 class="serif text-xl font-bold mb-4 text-orange-700">2025: Turismo como Motor y Legado</h3>
+              <div class="grid md:grid-cols-3 gap-4 text-sm">
+                <div class="bg-orange-50 p-4 rounded">
+                  <h4 class="font-semibold mb-2">Turismo como Motor</h4>
+                  <p>Narrativa consolidada como símbolo de productividad y reputación-país, con capacidad de generar orgullo, empleo y divisas</p>
+                </div>
+                <div class="bg-blue-50 p-4 rounded">
+                  <h4 class="font-semibold mb-2">Sucesión 2028</h4>
+                  <p>El PRM se afianza como actor del cambio cultural, pero emergen imaginarios sobre quién encarnará el legado sin perder narrativa de orden/ética</p>
+                </div>
+                <div class="bg-purple-50 p-4 rounded">
+                  <h4 class="font-semibold mb-2">Capas de Diagnóstico</h4>
+                  <p>Continuidad del símbolo "orden con alegría/libertad"; riesgo de que legado quede atado a "éxito económico parcial" sin consolidación institucional</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Abinader Positioning -->
+      <section id="abinader-positioning" class="section-anchor py-16 px-6 bg-gray-50">
+        <div class="max-w-4xl mx-auto">
+          <h2 class="serif text-3xl font-bold mb-8">Evolución del Posicionamiento de Luis Abinader (Trayectorias)</h2>
+
+          <div class="grid md:grid-cols-2 gap-6 mb-8">
+            <div class="bg-white p-6 rounded-lg shadow-sm">
+              <h3 class="font-bold text-lg mb-4 text-blue-700">Fase I (2020): Emergencia Sanitaria</h3>
+              <div class="space-y-3 text-sm">
+                <div>
+                  <h4 class="font-semibold">Contexto</h4>
+                  <p>Pandemia reordena la vida cotidiana y coloca al Estado como garante de protección y continuidad económica</p>
+                </div>
+                <div>
+                  <h4 class="font-semibold">Atributos Deseados</h4>
+                  <p>Cercanía, ética, empatía y capacidad de ordenar; se perfila el Imaginario del Presidente Ideal bajo rol Protector-Ordenador</p>
+                </div>
+                <div>
+                  <h4 class="font-semibold">Percepción</h4>
+                  <p>Valoración de conducción responsable en escenario excepcional; confianza informativa se vuelve central</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-sm">
+              <h3 class="font-bold text-lg mb-4 text-green-700">Fase II (2021): Gestión en Coyuntura Global</h3>
+              <div class="space-y-3 text-sm">
+                <div>
+                  <h4 class="font-semibold">Lectura Ciudadana</h4>
+                  <p>"Buen gobierno en mal momento": se distingue entre crisis exógena y capacidad de mitigación local</p>
+                </div>
+                <div>
+                  <h4 class="font-semibold">Riesgo Sistémico</h4>
+                  <p>Se insinúa disociación Presidente vs. Gobierno (cuello de ejecución en mandos medios)</p>
+                </div>
+                <div>
+                  <h4 class="font-semibold">Síntesis Arquetípica</h4>
+                  <p>Líder ético/protector con sombra de Inocente (bondad que puede leerse como falta de malicia operativa)</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-sm">
+              <h3 class="font-bold text-lg mb-4 text-red-700">Fase III (2022): Tecnopolítica del Orden</h3>
+              <div class="space-y-3 text-sm">
+                <div>
+                  <h4 class="font-semibold">Ejes Organizadores</h4>
+                  <p>Ingreso/empleo y seguridad dominan la evaluación; reforma policial como termómetro de mando</p>
+                </div>
+                <div>
+                  <h4 class="font-semibold">Tensiones</h4>
+                  <p>Demanda de orden con reglas sin autoritarismo; migración asociada a precarización laboral</p>
+                </div>
+                <div>
+                  <h4 class="font-semibold">Resultado Perceptual</h4>
+                  <p>Se valora la ética y anticorrupción "hacia arriba", pero se exige eficacia "hacia abajo"</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-sm">
+              <h3 class="font-bold text-lg mb-4 text-purple-700">Fase IV (2024): Catalizador de Responsabilidad</h3>
+              <div class="space-y-3 text-sm">
+                <div>
+                  <h4 class="font-semibold">Cambio Cultural (Ruta 24)</h4>
+                  <p>En jóvenes urbanos se consolida transferencia de responsabilidad Estado↔ciudadano</p>
+                </div>
+                <div>
+                  <h4 class="font-semibold">Efecto Comparativo</h4>
+                  <p>Este giro eleva la prima de liderazgo habilitador y penaliza relatos de dependencia/inercia</p>
+                </div>
+                <div>
+                  <h4 class="font-semibold">Impacto Político</h4>
+                  <p>Robustece al oficialismo frente a liderazgos asociados al pasado</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow-sm">
+            <h3 class="font-bold text-lg mb-4 text-orange-700">Fase V (2025): Imagen de Gestión y Legado</h3>
+            <div class="grid md:grid-cols-3 gap-4 text-sm">
+              <div>
+                <h4 class="font-semibold mb-2">Productividad y Orgullo-país</h4>
+                <p>Turismo como motor reputacional (empleo, divisas, servicios) y ancla comunicable del legado</p>
+              </div>
+              <div>
+                <h4 class="font-semibold mb-2">Institucionalidad y Cultura Cívica</h4>
+                <p>Consolidación del legado exige trazabilidad en reforma policial/judicial y continuidad del encuadre ética+eficacia</p>
+              </div>
+              <div>
+                <h4 class="font-semibold mb-2">Sucesión 2028</h4>
+                <p>Comparaciones arquetípicas entre perfiles del PRM y oposiciones bajo normas LCI (potenciadores de atributos, no simpatías)</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Risk Matrix -->
+          <div class="mt-8 bg-gradient-to-r from-red-50 to-yellow-50 p-6 rounded-lg">
+            <h3 class="serif text-xl font-bold mb-6">Matriz de Riesgos de Erosión y Puntos de Inflexión</h3>
+            <div class="grid md:grid-cols-2 gap-6">
+              <div>
+                <h4 class="font-bold mb-3 text-red-700">Riesgos de Erosión (Sombras Recurrentes)</h4>
+                <ul class="space-y-2 text-sm">
+                  <li class="flex items-start">
+                    <i class="fas fa-exclamation-triangle text-red-500 mt-1 mr-2"></i>
+                    <span><strong>Seguridad y migración:</strong> Si no hay mejoras, cristalizan lecturas de debilidad/indolencia</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i class="fas fa-exclamation-triangle text-red-500 mt-1 mr-2"></i>
+                    <span><strong>Ingreso/empleo:</strong> Persistencia de informalidad erosiona "cambio cultural"</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i class="fas fa-exclamation-triangle text-red-500 mt-1 mr-2"></i>
+                    <span><strong>Precios al consumidor:</strong> Sensibilidad cotidiana que reabre críticas a eficacia</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i class="fas fa-exclamation-triangle text-red-500 mt-1 mr-2"></i>
+                    <span><strong>Corrupción intermedia:</strong> Avances "arriba" sin resultados en bases operativas</span>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="font-bold mb-3 text-green-700">Puntos de Inflexión Comunicables</h4>
+                <ul class="space-y-2 text-sm">
+                  <li class="flex items-start">
+                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                    <span><strong>Reforma policial/judicial:</strong> Metas → acciones → resultados verificables</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                    <span><strong>Empleo formal juvenil:</strong> Inserción medible en sectores tractores</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                    <span><strong>Anticorrupción con cierre:</strong> Casos "hacia arriba" + sentencias/recupero</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                    <span><strong>Migración bajo reglas:</strong> Control con derechos, protección del empleo local</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                    <span><strong>Precios/ingreso disponible:</strong> Evidencia de alivio conectado a logros macro</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Social Processes -->
+      <section id="social-processes" class="section-anchor py-16 px-6">
+        <div class="max-w-4xl mx-auto">
+          <h2 class="serif text-3xl font-bold mb-8">Procesos Sociales en República Dominicana</h2>
+
+          <div class="mb-8">
+            <h3 class="serif text-2xl font-bold mb-6">Mapa Longitudinal de Problemáticas (2020→2025)</h3>
+            <div class="overflow-x-auto">
+              <table class="w-full text-sm bg-white rounded-lg shadow-sm">
+                <thead class="bg-gray-100">
+                  <tr>
+                    <th class="p-3 text-left font-semibold">Problemática</th>
+                    <th class="p-3 text-left font-semibold">2020 (Pandemia)</th>
+                    <th class="p-3 text-left font-semibold">2021 (Identidad)</th>
+                    <th class="p-3 text-left font-semibold">2022 (Reforma)</th>
+                    <th class="p-3 text-left font-semibold">2024 (Ruta 24)</th>
+                    <th class="p-3 text-left font-semibold">2025 (Legado)</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-200">
+                  <tr>
+                    <td class="p-3 font-medium">Pobreza / Canasta</td>
+                    <td class="p-3">Denuncia: "no alcanza para comer"</td>
+                    <td class="p-3">Reflexión: "suben por la pandemia/global"</td>
+                    <td class="p-3">Denuncia+Reflexión: "no hay empleo estable"</td>
+                    <td class="p-3">Disposición parcial (jóvenes): "hay que buscarse la vida"</td>
+                    <td class="p-3">Expectativa: que turismo/productividad derrame en empleo real</td>
+                  </tr>
+                  <tr class="bg-gray-50">
+                    <td class="p-3 font-medium">Empleo / Trabajo</td>
+                    <td class="p-3">Denuncia: pérdida masiva por encierro</td>
+                    <td class="p-3">Reflexión: autogestión, "resolver"</td>
+                    <td class="p-3">Denuncia+Reflexión: precariedad + informalidad</td>
+                    <td class="p-3">Disposición: juventud ve empleo formal y emprendimiento como meta</td>
+                    <td class="p-3">Demanda de trazabilidad: turismo → empleo → ingreso familiar</td>
+                  </tr>
+                  <tr>
+                    <td class="p-3 font-medium">Corrupción</td>
+                    <td class="p-3">Reflexión: "herencia de gobiernos pasados"</td>
+                    <td class="p-3">Denuncia: persiste en estructuras</td>
+                    <td class="p-3">Reflexión: confianza en ética presidencial, pero corrupción intermedia intocable</td>
+                    <td class="p-3">Denuncia+Reflexión: "los de abajo siguen iguales"</td>
+                    <td class="p-3">Exigencia de disposición institucional: casos con cierre judicial</td>
+                  </tr>
+                  <tr class="bg-gray-50">
+                    <td class="p-3 font-medium">Seguridad</td>
+                    <td class="p-3">Denuncia: menor visibilidad (pandemia)</td>
+                    <td class="p-3">Reflexión: retorno del delito post-encierro</td>
+                    <td class="p-3">Denuncia fuerte: crimen barrial, violencia</td>
+                    <td class="p-3">Disposición: aceptar reglas más estrictas si hay garantías</td>
+                    <td class="p-3">Expectativa: resultados tangibles en reforma policial/judicial</td>
+                  </tr>
+                  <tr>
+                    <td class="p-3 font-medium">Migración</td>
+                    <td class="p-3">Reflexión: aún latente</td>
+                    <td class="p-3">Reflexión: "desorden creciente"</td>
+                    <td class="p-3">Denuncia clara: presión en servicios/espacio público</td>
+                    <td class="p-3">Denuncia+Reflexión: jóvenes lo ligan a empleo/convivencia</td>
+                    <td class="p-3">Punto crítico: orden con derechos, evitar deriva xenófoba</td>
+                  </tr>
+                  <tr class="bg-gray-50">
+                    <td class="p-3 font-medium">Precios/Combustibles</td>
+                    <td class="p-3">Denuncia puntual: alimentos/insumos</td>
+                    <td class="p-3">Denuncia: "todo sube"</td>
+                    <td class="p-3">Reflexión: mezcla de factores globales/nacionales</td>
+                    <td class="p-3">Denuncia constante: afecta ingreso real</td>
+                    <td class="p-3">Expectativa: amortiguación visible → confianza sistémica</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-8 mb-8">
+            <div class="bg-white p-6 rounded-lg shadow-sm">
+              <h3 class="serif text-xl font-bold mb-4 text-purple-700">Niveles de Responsabilidad y Umbrales</h3>
+              <div class="space-y-4 text-sm">
+                <div>
+                  <h4 class="font-semibold">Modelo Escalonado</h4>
+                  <ol class="list-decimal list-inside space-y-1">
+                    <li><strong>Denuncia:</strong> Identificación del problema en lenguaje común</li>
+                    <li><strong>Reflexión:</strong> Búsqueda de causas y reparto de culpas</li>
+                    <li><strong>Disposición:</strong> Reconocimiento de corresponsabilidad</li>
+                  </ol>
+                </div>
+                <div>
+                  <h4 class="font-semibold">Umbrales de Aceptabilidad</h4>
+                  <p>Mientras un problema se quede en "denuncia" o "reflexión", se percibe como lugar común. Cuando pasa a "disposición", se abre espacio de cambio cultural</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-sm">
+              <h3 class="serif text-xl font-bold mb-4 text-green-700">Identidad y Vida Cotidiana</h3>
+              <div class="space-y-4 text-sm">
+                <div>
+                  <h4 class="font-semibold">Rasgo Cultural Distintivo</h4>
+                  <p>Identidad dominicana definida por capacidad de sostener <strong>alegría, libertad y espacio público compartido</strong> como recursos de resiliencia</p>
+                </div>
+                <div>
+                  <h4 class="font-semibold">Evolución Temporal</h4>
+                  <ul class="space-y-1">
+                    <li><strong>2020-2021:</strong> Privación de espacios de socialización tensiona cultura cívica</li>
+                    <li><strong>2021-2022:</strong> Reapertura reafirma centralidad del disfrute, pero instala autocrítica sobre "desorden"</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-gradient-to-r from-blue-50 to-purple-50 p-6 rounded-lg">
+            <h3 class="serif text-xl font-bold mb-4">Juventudes y Transferencia de Responsabilidad</h3>
+            <div class="grid md:grid-cols-2 gap-6 text-sm">
+              <div>
+                <h4 class="font-semibold mb-3">Trayectoria Discursiva</h4>
+                <div class="space-y-2">
+                  <div class="flex items-start">
+                    <div class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
+                      <span class="text-xs font-bold">20-21</span>
+                    </div>
+                    <p>Jóvenes exigen protección y oportunidades en marco de vulnerabilidad</p>
+                  </div>
+                  <div class="flex items-start">
+                    <div class="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
+                      <span class="text-xs font-bold">2022</span>
+                    </div>
+                    <p>Comienzan a verbalizar que no todo depende del gobierno; aparece "buscarse la vida" con reglas claras</p>
+                  </div>
+                  <div class="flex items-start">
+                    <div class="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
+                      <span class="text-xs font-bold">24-25</span>
+                    </div>
+                    <p>Emergencia de cambio cultural: discurso de responsabilidad personal y colectiva</p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <h4 class="font-semibold mb-3">Efectos Conductuales Esperados</h4>
+                <ul class="space-y-2">
+                  <li class="flex items-start">
+                    <i class="fas fa-arrow-up text-green-500 mt-1 mr-2"></i>
+                    <div>
+                      <strong>Participación política:</strong> Incremento en disposición a iniciativas comunitarias y emprendimientos sociales
+                    </div>
+                  </li>
+                  <li class="flex items-start">
+                    <i class="fas fa-arrow-up text-green-500 mt-1 mr-2"></i>
+                    <div>
+                      <strong>Emprendimiento:</strong> Refuerzo del prestigio de emprender como vía legítima de ascenso, con expectativas de formalización
+                    </div>
+                  </li>
+                  <li class="flex items-start">
+                    <i class="fas fa-arrow-up text-green-500 mt-1 mr-2"></i>
+                    <div>
+                      <strong>Cumplimiento normativo:</strong> Mayor cumplimiento de reglas básicas si la narrativa de responsabilidad se sostiene
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Political Parties -->
+      <section id="political-parties" class="section-anchor py-16 px-6">
+        <div class="max-w-4xl mx-auto">
+          <h2 class="serif text-3xl font-bold mb-8">Partidos Políticos y Sistemas de Confianza</h2>
+
+          <div class="space-y-8">
+            <!-- PRM -->
+            <div class="bg-white p-6 rounded-lg shadow-sm border-l-4 border-blue-500">
+              <h3 class="serif text-xl font-bold mb-4 text-blue-700">PRM: Imagen, Confiabilidad y Liderazgo (2025)</h3>
+              <div class="grid md:grid-cols-2 gap-6 text-sm">
+                <div>
+                  <h4 class="font-semibold mb-3 text-green-600">Fortalezas</h4>
+                  <ul class="space-y-2">
+                    <li class="flex items-start">
+                      <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                      <span><strong>Capital moral y de gestión:</strong> Relato "ética + eficacia" con hitos comunicables (atracción de inversión, turismo)</span>
+                    </li>
+                    <li class="flex items-start">
+                      <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                      <span><strong>Narrativa habilitadora en jóvenes:</strong> Sintonía con transferencia de responsabilidad (Ruta 24)</span>
+                    </li>
+                    <li class="flex items-start">
+                      <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                      <span><strong>Anclaje territorial selectivo:</strong> Consolidación en municipios con economías dinámicas</span>
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 class="font-semibold mb-3 text-red-600">Debilidades / Riesgos</h4>
+                  <ul class="space-y-2">
+                    <li class="flex items-start">
+                      <i class="fas fa-exclamation-triangle text-red-500 mt-1 mr-2"></i>
+                      <span><strong>Seguridad y migración:</strong> Si no hay resultados tangibles, cristaliza lectura de indolencia/aislamiento</span>
+                    </li>
+                    <li class="flex items-start">
+                      <i class="fas fa-exclamation-triangle text-red-500 mt-1 mr-2"></i>
+                      <span><strong>Corrupción intermedia:</strong> Ausencia de "cierre" en niveles policiales/municipales</span>
+                    </li>
+                    <li class="flex items-start">
+                      <i class="fas fa-exclamation-triangle text-red-500 mt-1 mr-2"></i>
+                      <span><strong>Precios/ingreso disponible:</strong> Sensibilidad cotidiana que puede neutralizar logros macro</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="mt-6 p-4 bg-blue-50 rounded">
+                <h4 class="font-semibold mb-2">Liderazgo Interno y Presidenciables Emergentes</h4>
+                <div class="grid md:grid-cols-3 gap-4 text-xs">
+                  <div class="bg-white p-3 rounded">
+                    <strong>El Gestor-Institucional:</strong> Perfil técnico con énfasis en reforma, productividad y trazabilidad
+                  </div>
+                  <div class="bg-white p-3 rounded">
+                    <strong>El Conector-Social:</strong> Énfasis en cohesión, seguridad de proximidad y cierre anticorrupción
+                  </div>
+                  <div class="bg-white p-3 rounded">
+                    <strong>El Proyector-Desarrollo:</strong> Turismo/servicios/innovación, capaz de ligar reputación-país con empleo juvenil
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- PLD and FP -->
+            <div class="grid md:grid-cols-2 gap-6">
+              <div class="bg-white p-6 rounded-lg shadow-sm">
+                <h3 class="serif text-lg font-bold mb-4 text-purple-700">PLD: Reconstrucción y Continuidad</h3>
+                <div class="space-y-3 text-sm">
+                  <div>
+                    <h4 class="font-semibold">Reconstrucción de Atributos</h4>
+                    <p>Busca reposicionarse en competencia técnica y "gestión probada"</p>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold">Lastre de Continuidad</h4>
+                    <p>Persiste percepción de "ciclo agotado"/continuidad sistémica</p>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold">Fracturas</h4>
+                    <p>Tensiones generacionales y disputas locales afectan proyección de confianza</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-white p-6 rounded-lg shadow-sm">
+                <h3 class="serif text-lg font-bold mb-4 text-orange-700">Fuerza del Pueblo (FP)</h3>
+                <div class="space-y-3 text-sm">
+                  <div>
+                    <h4 class="font-semibold">Capital del "Orden Inmediato"</h4>
+                    <p>Conecta con segmentos que priorizan control de seguridad/migración "ya"</p>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold">Riesgo de Monocausalidad</h4>
+                    <p>Si relato se concentra solo en "mano fuerte", carece de plataforma ética+productiva</p>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold">Continuidad Percibida</h4>
+                    <p>Para sectores medios/urbanos, hereda parte de la sombra del pasado</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Territorial Analysis -->
+            <div class="bg-gray-50 p-6 rounded-lg">
+              <h3 class="serif text-xl font-bold mb-4">Otros Actores y Dinámicas Territoriales</h3>
+              <div class="grid md:grid-cols-2 gap-6 text-sm">
+                <div>
+                  <h4 class="font-semibold mb-2">Patrones Regionales</h4>
+                  <ul class="space-y-1">
+                    <li><strong>Corredores turísticos:</strong> Receptividad a productividad, orgullo y empleo</li>
+                    <li><strong>Áreas metropolitanas:</strong> Alta sensibilidad a seguridad/migración y "calidad de Estado"</li>
+                    <li><strong>Frontera y nodos logísticos:</strong> Centralidad del control con derechos</li>
+                    <li><strong>Municipios informales:</strong> Prima el "resolver" y seguridad barrial</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 class="font-semibold mb-2">Coaliciones y Terceras Vías</h4>
+                  <p>Potencial cuando logran anclaje local fuerte + propuesta operativa en eje sensible (seguridad, empleo juvenil, espacio público)</p>
+
+                  <h4 class="font-semibold mb-2 mt-4">Regla de Oro para Gobernanza Territorial</h4>
+                  <ol class="list-decimal list-inside text-xs">
+                    <li>Seguridad con trazabilidad municipal</li>
+                    <li>Derrame productivo verificable en turismo</li>
+                    <li>Anticorrupción de "bases" con casos-con-cierre</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Segmentation -->
+      <section id="segmentation" class="section-anchor py-16 px-6 bg-gray-50">
+        <div class="max-w-4xl mx-auto">
+          <h2 class="serif text-3xl font-bold mb-8">Segmentación y Audiencias Clave</h2>
+
+          <div class="mb-8">
+            <h3 class="serif text-2xl font-bold mb-6">Segmentación por Creencias (RUTA 24)</h3>
+            <div class="grid md:grid-cols-2 gap-6">
+              <div class="bg-white p-6 rounded-lg shadow-sm">
+                <h4 class="font-bold text-lg mb-4 text-blue-700">Sistemas de Creencias</h4>
+                <div class="space-y-4 text-sm">
+                  <div class="border-l-4 border-blue-500 pl-3">
+                    <h5 class="font-semibold">Atracción</h5>
+                    <p>Basada en afinidad simbólica, carisma, orgullo identitario</p>
+                    <p class="text-xs text-gray-600 italic">"Me gusta cómo nos representa fuera, da buena imagen del país"</p>
+                  </div>
+                  <div class="border-l-4 border-green-500 pl-3">
+                    <h5 class="font-semibold">Autoridad</h5>
+                    <p>Relación centrada en disciplina y reglas</p>
+                    <p class="text-xs text-gray-600 italic">"Si no pone mano dura, nadie respeta nada"</p>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-white p-6 rounded-lg shadow-sm">
+                <div class="space-y-4 text-sm">
+                  <div class="border-l-4 border-red-500 pl-3">
+                    <h5 class="font-semibold">Juicio</h5>
+                    <p>Ciudadano como evaluador severo de resultados y coherencia</p>
+                    <p class="text-xs text-gray-600 italic">"Hablan mucho de cambio, pero los mismos problemas siguen"</p>
+                  </div>
+                  <div class="border-l-4 border-purple-500 pl-3">
+                    <h5 class="font-semibold">Responsabilidad</h5>
+                    <p>Enfoque emergente: ciudadanos se asumen parte del cambio</p>
+                    <p class="text-xs text-gray-600 italic">"Uno también tiene que poner de su parte; el gobierno no puede hacerlo todo"</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-6 bg-blue-50 p-6 rounded-lg">
+              <h4 class="font-semibold mb-3">Aplicación y Distribución (2024-2025)</h4>
+              <div class="grid md:grid-cols-4 gap-4 text-sm">
+                <div class="bg-white p-3 rounded">
+                  <h5 class="font-semibold text-blue-700">Jóvenes <35 años< /h5>
+                      <p>Predomina <strong>Responsabilidad</strong>: internalizan narrativa de esfuerzo personal</p>
+                </div>
+                <div class="bg-white p-3 rounded">
+                  <h5 class="font-semibold text-green-700">Adultos Mayores >55</h5>
+                  <p>Dominan <strong>Atracción/Autoridad</strong>: buscan orgullo y orden inmediato</p>
+                </div>
+                <div class="bg-white p-3 rounded">
+                  <h5 class="font-semibold text-red-700">Oposición</h5>
+                  <p>Intenta activar <strong>Juicio</strong>: denuncia de incumplimientos</p>
+                </div>
+                <div class="bg-white p-3 rounded">
+                  <h5 class="font-semibold text-purple-700">Oficialismo</h5>
+                  <p>Gana conectando <strong>Responsabilidad + Atracción</strong>: orgullo-país con agencia ciudadana</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-8 mb-8">
+            <div class="bg-white p-6 rounded-lg shadow-sm">
+              <h3 class="serif text-xl font-bold mb-4 text-green-700">Diferenciales Generacionales</h3>
+              <div class="space-y-4 text-sm">
+                <div>
+                  <h4 class="font-semibold text-blue-600">&lt;35 años (Jóvenes)</h4>
+                  <ul class="space-y-1 text-xs">
+                    <li>• Socialización marcada por pandemia en etapa formativa</li>
+                    <li>• Menor confianza en paternalismo estatal</li>
+                    <li>• Identidad laboral/emprendedora en transición de informalidad a formalización</li>
+                    <li>• Receptivos a liderazgos que "habilitan"</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-orange-600">≥35 años (Adultos)</h4>
+                  <ul class="space-y-1 text-xs">
+                    <li>• Valoran estabilidad y continuidad</li>
+                    <li>• Esperan que el Estado proteja (empleo, seguridad, servicios)</li>
+                    <li>• Crítica se expresa más en plano de Juicio (evaluación de resultados)</li>
+                    <li>• En mayores de 55, persiste valoración de Autoridad</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-sm">
+              <h3 class="serif text-xl font-bold mb-4 text-purple-700">Estratos Socioeconómicos</h3>
+              <div class="space-y-4 text-sm">
+                <div>
+                  <h4 class="font-semibold text-red-600">Estratos Bajos</h4>
+                  <p>Dependencia de redes informales (familia, comunidad); "resolver" como clave de resiliencia; expectativa de protección básica</p>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-blue-600">Estratos Medios</h4>
+                  <p>Sensibles a costo de vida y seguridad barrial; núcleo de autocrítica cultural; demandan "derrame" tangible de logros macro</p>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-green-600">Estratos Altos</h4>
+                  <p>Interés en estabilidad institucional, reputación-país y oportunidades de inversión; conectan con narrativas de Atracción</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-gradient-to-r from-purple-50 to-blue-50 p-6 rounded-lg">
+            <h3 class="serif text-xl font-bold mb-4">Matriz LOCUS® Aplicada a Actores Políticos</h3>
+            <div class="overflow-x-auto">
+              <table class="w-full text-sm">
+                <thead class="bg-white">
+                  <tr>
+                    <th class="p-2 text-left font-semibold">Cuadrante</th>
+                    <th class="p-2 text-left font-semibold">Definición</th>
+                    <th class="p-2 text-left font-semibold">Aplicación en RD</th>
+                    <th class="p-2 text-left font-semibold">Ejemplo Verbatim</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-200">
+                  <tr class="bg-red-50">
+                    <td class="p-2 font-semibold">Transformadores (T)</td>
+                    <td class="p-2">Cambio subjetivo y objetivo</td>
+                    <td class="p-2">Demandan nuevas reglas + nuevos actores. Afloran en 2022 con crisis de seguridad</td>
+                    <td class="p-2 italic">"Hay que cambiarlo todo: la forma de gobernar y los que gobiernan"</td>
+                  </tr>
+                  <tr class="bg-yellow-50">
+                    <td class="p-2 font-semibold">Exploradores (E)</td>
+                    <td class="p-2">Mantienen valores, piden nuevos actores</td>
+                    <td class="p-2">Predominan en 2020-2021: confianza en principios, pero piden nuevos gestores</td>
+                    <td class="p-2 italic">"El presidente parece correcto, pero alrededor hay que cambiar a todos"</td>
+                  </tr>
+                  <tr class="bg-green-50">
+                    <td class="p-2 font-semibold">Renovadores (R)</td>
+                    <td class="p-2">Cambio en valores, no en actores</td>
+                    <td class="p-2">En 2024 jóvenes adoptan responsabilidad personal, pero confían en el PRM</td>
+                    <td class="p-2 italic">"Yo también tengo que poner de mi parte, pero este gobierno me da confianza"</td>
+                  </tr>
+                  <tr class="bg-blue-50">
+                    <td class="p-2 font-semibold">Preservadores (P)</td>
+                    <td class="p-2">No demandan cambios</td>
+                    <td class="p-2">Minoría, especialmente en mayores que valoran continuidad y orden tradicional</td>
+                    <td class="p-2 italic">"Siempre ha sido así, y así está bien"</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Territorial Dynamics -->
+      <section id="territorial-dynamics" class="section-anchor py-16 px-6">
+        <div class="max-w-4xl mx-auto">
+          <h2 class="serif text-3xl font-bold mb-8">Dinámicas Territoriales y Municipios Foco</h2>
+
+          <div class="mb-8">
+            <h3 class="serif text-2xl font-bold mb-6">Municipios Foco y Justificación Estratégica</h3>
+            <p class="text-sm mb-6">Selección basada en: (1) concentración demográfica, (2) influencia cultural/metropolitana, (3) relevancia histórica, (4) condición de bastión partidario, (5) aporte económico sectorial.</p>
+
+            <div class="grid md:grid-cols-3 gap-4 text-sm">
+              <div class="bg-white p-4 rounded-lg shadow-sm">
+                <h4 class="font-bold mb-2 text-blue-700">Área Metropolitana</h4>
+                <ul class="space-y-1">
+                  <li><strong>Distrito Nacional:</strong> Centro político-cultural-económico; nodo de opinión nacional</li>
+                  <li><strong>Santo Domingo Este:</strong> Segundo polo demográfico; decisivo para lectura metropolitana</li>
+                  <li><strong>San Cristóbal:</strong> Décima ciudad; historia política marcada; bastión PLD</li>
+                </ul>
+              </div>
+              <div class="bg-white p-4 rounded-lg shadow-sm">
+                <h4 class="font-bold mb-2 text-green-700">Cibao y Corredores</h4>
+                <ul class="space-y-1">
+                  <li><strong>Santiago:</strong> Capital del Cibao; clase media emergente</li>
+                  <li><strong>La Vega:</strong> Relevancia histórica (Carnaval); bastión PRM</li>
+                  <li><strong>Higüey:</strong> Nodo corredor Punta Cana–Bávaro; economía turística</li>
+                  <li><strong>San Francisco:</strong> Capital Nordeste; tradición política</li>
+                </ul>
+              </div>
+              <div class="bg-white p-4 rounded-lg shadow-sm">
+                <h4 class="font-bold mb-2 text-purple-700">Polos Turísticos y Sur</h4>
+                <ul class="space-y-1">
+                  <li><strong>La Romana:</strong> Polo turístico/industrial (Casa de Campo)</li>
+                  <li><strong>Puerto Plata:</strong> Centro turístico e histórico</li>
+                  <li><strong>San Pedro:</strong> Polo portuario/histórico; bastión PLD</li>
+                  <li><strong>Moca y Baní:</strong> Influencia política/cultural; bastiones PRM</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="mt-6 p-4 bg-gray-50 rounded">
+              <p class="text-sm"><strong>Cobertura 2024-2025:</strong> 32 sesiones de grupo y 18 etnografías familiares distribuidas en estos municipios, con celdas por edad/sexo/estrato; resultados electorales locales de 2020 como insumo contextual.</p>
+            </div>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-8 mb-8">
+            <div class="bg-white p-6 rounded-lg shadow-sm">
+              <h3 class="serif text-xl font-bold mb-4 text-blue-700">Contrastes Regionales</h3>
+              <div class="space-y-4 text-sm">
+                <div>
+                  <h4 class="font-semibold">Área Metropolitana (DN–SDE)</h4>
+                  <p>Dominan seguridad de proximidad, precios/canasta, congestión institucional. Alta valoración del estándar ético presidencial, pero brecha Presidente↔Gobierno evidente</p>
+                </div>
+                <div>
+                  <h4 class="font-semibold">Cibao (Santiago, La Vega, Moca)</h4>
+                  <p>Santiago: clase media sensible a seguridad/convivencia. La Vega/Moca: bastiones PRM con expectativa de disciplina cívica. SFM: tradición opositora con demanda de empleo formal</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-sm">
+              <div class="space-y-4 text-sm">
+                <div>
+                  <h4 class="font-semibold">Corredores Turísticos (Higüey/La Romana/Puerto Plata)</h4>
+                  <p>Turismo como motor reputacional y empleo; métrica de credibilidad es "derrame" local. Vulnerabilidades en seguridad para visitantes y orden del espacio público</p>
+                </div>
+                <div>
+                  <h4 class="font-semibold">Eje Sur (Baní, San Cristóbal) y Este (San Pedro)</h4>
+                  <p>Expectativa de orden y reducción de delitos de oportunidad; reclamo por cierre anticorrupción en niveles municipales/policiales</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-gradient-to-r from-blue-50 to-green-50 p-6 rounded-lg">
+            <h3 class="serif text-xl font-bold mb-4">Tablero de Acciones de Prueba por Municipio</h3>
+            <div class="overflow-x-auto">
+              <table class="w-full text-sm">
+                <thead class="bg-white">
+                  <tr>
+                    <th class="p-2 text-left font-semibold">Municipio</th>
+                    <th class="p-2 text-left font-semibold">Eje Sensible</th>
+                    <th class="p-2 text-left font-semibold">Acción de Prueba Esperada</th>
+                    <th class="p-2 text-left font-semibold">Indicador de Éxito Ciudadano</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-200">
+                  <tr class="bg-blue-50">
+                    <td class="p-2 font-medium">Distrito Nacional</td>
+                    <td class="p-2">Seguridad barrial / corrupción intermedia</td>
+                    <td class="p-2">Aplicación visible de reforma policial en cuadrantes; sanciones a mandos medios</td>
+                    <td class="p-2">Menos denuncias de "macuteo"; percepción de barrios más seguros</td>
+                  </tr>
+                  <tr class="bg-green-50">
+                    <td class="p-2 font-medium">Santo Domingo Este</td>
+                    <td class="p-2">Precios / servicios básicos</td>
+                    <td class="p-2">Subsidios focalizados en transporte/alimentos; mejoras en servicios públicos</td>
+                    <td class="p-2">"La compra me rinde más"; menos quejas por apagones</td>
+                  </tr>
+                  <tr class="bg-purple-50">
+                    <td class="p-2 font-medium">Santiago</td>
+                    <td class="p-2">Seguridad / convivencia</td>
+                    <td class="p-2">Protocolos de orden urbano (transporte, narcomenudeo) con resultados</td>
+                    <td class="p-2">Reducción de delitos de oportunidad; percepción de calles más ordenadas</td>
+                  </tr>
+                  <tr class="bg-orange-50">
+                    <td class="p-2 font-medium">Higüey</td>
+                    <td class="p-2">Turismo → empleo local</td>
+                    <td class="p-2">Programas de primer empleo y formación dual vinculados a hoteles</td>
+                    <td class="p-2">Jóvenes reportan "me dieron trabajo en hotel"; orgullo por turismo</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="mt-4 text-sm">
+              <h4 class="font-semibold mb-2">Observaciones Estratégicas:</h4>
+              <ul class="space-y-1 text-xs">
+                <li>• <strong>Tres pruebas nacionales con medición local:</strong> seguridad trazable, derrame productivo verificable, anticorrupción de base</li>
+                <li>• <strong>Indicadores ciudadanos:</strong> cambios en relatos cotidianos, percepción de orden, orgullo-país conectado a logros tangibles</li>
+                <li>• <strong>Segmentación RUTA 24:</strong> Atracción (orgullo), Autoridad (seguridad), Juicio (anticorrupción), Responsabilidad (empleo/corresponsabilidad)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Scenarios -->
+      <section id="scenarios" class="section-anchor py-16 px-6 bg-gray-50">
+        <div class="max-w-4xl mx-auto">
+          <h2 class="serif text-3xl font-bold mb-8">Escenarios Prospectivos 2025–2028</h2>
+
+          <div class="mb-8">
+            <h3 class="serif text-2xl font-bold mb-6">Drivers: Palancas y Tensores Clave</h3>
+            <div class="grid md:grid-cols-2 gap-6">
+              <div class="space-y-4">
+                <div class="bg-white p-4 rounded-lg shadow-sm">
+                  <h4 class="font-bold text-green-700 mb-2">1. Empleo Juvenil (formalización + primer empleo)</h4>
+                  <div class="text-sm space-y-1">
+                    <p><strong>Palanca:</strong> Consolidación del cambio cultural en <35 años (RUTA 24)< /p>
+                        <p><strong>Tensores:</strong> Brecha formación-mercado; informalidad estructural</p>
+                  </div>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm">
+                  <h4 class="font-bold text-orange-700 mb-2">2. Precios / Ingreso Real del Hogar</h4>
+                  <div class="text-sm space-y-1">
+                    <p><strong>Palanca:</strong> Amortiguadores visibles y aumentos ligados a productividad</p>
+                    <p><strong>Tensores:</strong> Shocks externos; rezagos salariales</p>
+                  </div>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm">
+                  <h4 class="font-bold text-red-700 mb-2">3. Seguridad / Migración (orden con reglas)</h4>
+                  <div class="text-sm space-y-1">
+                    <p><strong>Palanca:</strong> Reforma policial/judicial trazable; coordinación fronteriza</p>
+                    <p><strong>Tensores:</strong> Delito oportunista; corrupción operativa; deriva xenófoba</p>
+                  </div>
+                </div>
+              </div>
+              <div class="space-y-4">
+                <div class="bg-white p-4 rounded-lg shadow-sm">
+                  <h4 class="font-bold text-purple-700 mb-2">4. Anticorrupción (con cierre)</h4>
+                  <div class="text-sm space-y-1">
+                    <p><strong>Palanca:</strong> Sentencias efectivas, recupero de activos, disciplinamiento</p>
+                    <p><strong>Tensores:</strong> Percepción de "show" sin consecuencias; impunidad</p>
+                  </div>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm">
+                  <h4 class="font-bold text-blue-700 mb-2">5. Institucionalidad (capacidad de ejecución)</h4>
+                  <div class="text-sm space-y-1">
+                    <p><strong>Palanca:</strong> "Misión de gobierno" con metas–acciones–resultados</p>
+                    <p><strong>Tensores:</strong> Cuello en mandos medios; desconexión Presidente–Gobierno</p>
+                  </div>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm">
+                  <h4 class="font-bold text-green-700 mb-2">6. Turismo / Productividad</h4>
+                  <div class="text-sm space-y-1">
+                    <p><strong>Palanca:</strong> Encadenamientos locales (primer empleo, formación dual)</p>
+                    <p><strong>Tensores:</strong> Derrame insuficiente; seguridad del destino</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="space-y-8">
+            <!-- Scenario A -->
+            <div class="bg-white p-6 rounded-lg shadow-sm border-l-4 border-green-500">
+              <h3 class="serif text-xl font-bold mb-4 text-green-700">A. Continuidad Intensiva ("Ética + Orden + Responsabilidad")</h3>
+              <div class="grid md:grid-cols-3 gap-4 text-sm">
+                <div>
+                  <h4 class="font-semibold mb-2">Narrativa Dominante</h4>
+                  <p>Consolidación del cambio cultural con resultados operativos visibles</p>
+                </div>
+                <div>
+                  <h4 class="font-semibold mb-2">Condiciones (Mínimo Viable)</h4>
+                  <ul class="space-y-1 text-xs">
+                    <li>• Empleo juvenil formal en corredores turísticos</li>
+                    <li>• Seguridad: reducción delitos de oportunidad</li>
+                    <li>• Anticorrupción: casos con cierre en niveles municipal/policial</li>
+                    <li>• Precios: amortiguadores focalizados percibidos</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 class="font-semibold mb-2">Efecto Político</h4>
+                  <p>PRM mantiene ventaja reputacional; oposición obligada a sofisticar oferta</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Scenario B -->
+            <div class="bg-white p-6 rounded-lg shadow-sm border-l-4 border-yellow-500">
+              <h3 class="serif text-xl font-bold mb-4 text-yellow-700">B. Ajuste Institucional ("Eficacia antes que narrativa")</h3>
+              <div class="grid md:grid-cols-3 gap-4 text-sm">
+                <div>
+                  <h4 class="font-semibold mb-2">Disparador</h4>
+                  <p>Brecha persistente Presidente–Gobierno; presión ciudadana por "poner malicia operativa"</p>
+                </div>
+                <div>
+                  <h4 class="font-semibold mb-2">Condiciones</h4>
+                  <ul class="space-y-1 text-xs">
+                    <li>• Reingeniería de mandos medios</li>
+                    <li>• Pactos interinstitucionales con metas trimestrales</li>
+                    <li>• Conversión de programas hacia derrames medibles</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 class="font-semibold mb-2">Resultado</h4>
+                  <p>Conserva confianza si corrección es rápida y verificable; abre espacio para terceras vías si ajuste es tardío</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Scenario C -->
+            <div class="bg-white p-6 rounded-lg shadow-sm border-l-4 border-red-500">
+              <h3 class="serif text-xl font-bold mb-4 text-red-700">C. Estrés Externo ("Resiliencia selectiva")</h3>
+              <div class="grid md:grid-cols-3 gap-4 text-sm">
+                <div>
+                  <h4 class="font-semibold mb-2">Contexto</h4>
+                  <p>Choques exógenos (precios globales, huracanes, caída demanda turística) + tensiones regionales</p>
+                </div>
+                <div>
+                  <h4 class="font-semibold mb-2">Respuesta</h4>
+                  <ul class="space-y-1 text-xs">
+                    <li>• Paquetes de contingencia que protegen ingreso real</li>
+                    <li>• Seguridad: énfasis en delitos de oportunidad</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 class="font-semibold mb-2">Escenario</h4>
+                  <p>Oficialismo retiene legitimidad si demuestra gestión de crisis con alivio micro; fallo crece ventana de oposición</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-8 bg-gradient-to-r from-blue-50 to-green-50 p-6 rounded-lg">
+            <h3 class="serif text-xl font-bold mb-4">Indicadores de Alerta Temprana</h3>
+            <div class="grid md:grid-cols-2 gap-6 text-sm">
+              <div>
+                <h4 class="font-semibold mb-3">Cualitativos (Grupos/Etnografías LCI)</h4>
+                <ul class="space-y-2 text-xs">
+                  <li><strong>Empleo juvenil:</strong> Verbatims tipo "me llamaron", "pasé a fijo", "práctica con contrato"</li>
+                  <li><strong>Precios:</strong> "La compra me rinde" en DN/SDE; "transporte me sale menos" en SDE/SC</li>
+                  <li><strong>Seguridad:</strong> Menos relatos de robos; disminución quejas por trato policial</li>
+                  <li><strong>Anticorrupción:</strong> Cambio de "show mediático" a "aquí sí están metiendo mano"</li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="font-semibold mb-3">Conductuales / Administrativos</h4>
+                <ul class="space-y-2 text-xs">
+                  <li><strong>Empleo:</strong> % nuevos contratos &lt;29 años en hoteles/servicios por municipio</li>
+                  <li><strong>Seguridad:</strong> Tasa delitos de oportunidad por cuadrante; tiempos de respuesta</li>
+                  <li><strong>Anticorrupción:</strong> Conteo casos municipales/policiales con sentencia y recupero</li>
+                  <li><strong>Turismo:</strong> % compras hoteleras a proveedor local; % primer empleo local</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Legacy -->
+      <section id="legacy" class="section-anchor py-16 px-6">
+        <div class="max-w-4xl mx-auto">
+          <h2 class="serif text-3xl font-bold mb-8">Legado Potencial de la Presidencia de Luis Abinader</h2>
+
+          <div class="mb-8">
+            <h3 class="serif text-2xl font-bold mb-6">Ejes de Legado Estructural</h3>
+            <div class="grid md:grid-cols-2 gap-6">
+              <div class="bg-white p-6 rounded-lg shadow-sm">
+                <h4 class="font-bold text-lg mb-4 text-blue-700">
+                  <i class="fas fa-building mr-2"></i>Institucionalidad y Orden
+                </h4>
+                <ul class="space-y-2 text-sm">
+                  <li><strong>Reforma policial y judicial</strong> como columna vertebral</li>
+                  <li>Estándar de <strong>"orden con reglas"</strong>: seguridad de proximidad, protocolos de uso de la fuerza</li>
+                  <li>Estado con <strong>capacidad de mando visible</strong> sin deriva autoritaria</li>
+                </ul>
+              </div>
+
+              <div class="bg-white p-6 rounded-lg shadow-sm">
+                <h4 class="font-bold text-lg mb-4 text-green-700">
+                  <i class="fas fa-users mr-2"></i>Cultura Cívica y Responsabilidad
+                </h4>
+                <ul class="space-y-2 text-sm">
+                  <li><strong>Cambio cultural juvenil</strong> (Ruta 24): paso de la queja a la corresponsabilidad</li>
+                  <li>Desplazamiento de <strong>locus de control</strong>: de dependencia estatal a agencia personal/regulada</li>
+                  <li>Generación que vincula <strong>progreso con disciplina</strong>, sin renunciar a Estado regulador</li>
+                </ul>
+              </div>
+
+              <div class="bg-white p-6 rounded-lg shadow-sm">
+                <h4 class="font-bold text-lg mb-4 text-orange-700">
+                  <i class="fas fa-chart-line mr-2"></i>Productividad y Turismo
+                </h4>
+                <ul class="space-y-2 text-sm">
+                  <li>Turismo como <strong>motor reputacional y económico</strong>; vínculo orgullo-país ↔ empleo local</li>
+                  <li><strong>Encadenamientos productivos</strong>: primer empleo, formación dual, PyMEs locales</li>
+                  <li>País que proyecta <strong>modernización y competitividad global</strong></li>
+                </ul>
+              </div>
+
+              <div class="bg-white p-6 rounded-lg shadow-sm">
+                <h4 class="font-bold text-lg mb-4 text-purple-700">
+                  <i class="fas fa-handshake mr-2"></i>Integración Social
+                </h4>
+                <ul class="space-y-2 text-sm">
+                  <li>Reconstrucción de <strong>confianza en torno a "ética + eficacia"</strong></li>
+                  <li>Narrativa de <strong>anticorrupción como garantía de equidad</strong></li>
+                  <li>Percepción de que la política puede ser <strong>espacio de honestidad y servicio</strong></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="mb-8">
+            <h3 class="serif text-2xl font-bold mb-6">Condiciones de Consolidación vs. Erosión</h3>
+            <div class="overflow-x-auto">
+              <table class="w-full bg-white rounded-lg shadow-sm">
+                <thead class="bg-gray-100">
+                  <tr>
+                    <th class="p-3 text-left font-semibold">Eje de Legado</th>
+                    <th class="p-3 text-left font-semibold">Evidencia 2020–2025</th>
+                    <th class="p-3 text-left font-semibold text-green-700">Condición 2025–2028 (Consolidación)</th>
+                    <th class="p-3 text-left font-semibold text-red-700">Riesgo de Sombra (Erosión)</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-200 text-sm">
+                  <tr>
+                    <td class="p-3 font-medium">Institucionalidad / Orden</td>
+                    <td class="p-3">Reforma policial como prueba de mando; discurso anticorrupción "hacia arriba"</td>
+                    <td class="p-3">Resultados verificables en reducción de delitos, protocolos auditables, sanción a corrupción intermedia</td>
+                    <td class="p-3">Reforma percibida como "papel mojado"; lectura de indolencia/aislamiento</td>
+                  </tr>
+                  <tr class="bg-gray-50">
+                    <td class="p-3 font-medium">Cultura Cívica / Responsabilidad</td>
+                    <td class="p-3">Emergencia del cambio cultural juvenil (Ruta 24); verbalizaciones de corresponsabilidad</td>
+                    <td class="p-3">Narrativa que se traduce en conductas estables (participación, formalización laboral)</td>
+                    <td class="p-3">Si no hay oportunidades, interpretación como abandono → cinismo</td>
+                  </tr>
+                  <tr>
+                    <td class="p-3 font-medium">Productividad / Turismo</td>
+                    <td class="p-3">Turismo como motor reputacional; programas de primer empleo en polos turísticos</td>
+                    <td class="p-3">Encadenamientos locales visibles: empleos formales juveniles, PyMEs integradas</td>
+                    <td class="p-3">"Vitrina sin derrame": orgullo-país neutralizado por percepción de exclusión</td>
+                  </tr>
+                  <tr class="bg-gray-50">
+                    <td class="p-3 font-medium">Integración Social / Ética</td>
+                    <td class="p-3">Relato ético presidencial diferenciado; juicios ciudadanos valoran anticorrupción</td>
+                    <td class="p-3">Casos con cierre judicial (sentencias, recupero) en niveles municipales/policiales</td>
+                    <td class="p-3">Percepción de "show mediático" sin consecuencias → erosión de narrativa ética</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="bg-gradient-to-r from-purple-50 to-blue-50 p-6 rounded-lg">
+            <h3 class="serif text-xl font-bold mb-4">Narrativas Públicas de Legado y Arquetipos (2020–2025)</h3>
+            <div class="grid md:grid-cols-5 gap-4 text-sm">
+              <div class="bg-white p-4 rounded text-center">
+                <div class="w-16 h-16 bg-blue-100 rounded-full mx-auto mb-3 flex items-center justify-center">
+                  <i class="fas fa-shield-alt text-blue-600 text-xl"></i>
+                </div>
+                <h4 class="font-semibold mb-2">2020: El Protector</h4>
+                <p class="text-xs">Arquetipo del Cuidador Ético: presidente ideal en crisis, cercano y confiable</p>
+              </div>
+              <div class="bg-white p-4 rounded text-center">
+                <div class="w-16 h-16 bg-green-100 rounded-full mx-auto mb-3 flex items-center justify-center">
+                  <i class="fas fa-balance-scale text-green-600 text-xl"></i>
+                </div>
+                <h4 class="font-semibold mb-2">2021: El Equilibrista</h4>
+                <p class="text-xs">Soberano Empático: equilibrio entre libertad/alegría y disciplina; riesgo sombra de Inocente</p>
+              </div>
+              <div class="bg-white p-4 rounded text-center">
+                <div class="w-16 h-16 bg-red-100 rounded-full mx-auto mb-3 flex items-center justify-center">
+                  <i class="fas fa-sword text-red-600 text-xl"></i>
+                </div>
+                <h4 class="font-semibold mb-2">2022: El Reformador</h4>
+                <p class="text-xs">Guerrero Justo: lucha contra corrupción y crimen; demanda de eficacia sin autoritarismo</p>
+              </div>
+              <div class="bg-white p-4 rounded text-center">
+                <div class="w-16 h-16 bg-purple-100 rounded-full mx-auto mb-3 flex items-center justify-center">
+                  <i class="fas fa-hands-helping text-purple-600 text-xl"></i>
+                </div>
+                <h4 class="font-semibold mb-2">2024: El Catalizador</h4>
+                <p class="text-xs">Habilitador de Responsabilidad: convierte a la juventud en protagonista del cambio</p>
+              </div>
+              <div class="bg-white p-4 rounded text-center">
+                <div class="w-16 h-16 bg-orange-100 rounded-full mx-auto mb-3 flex items-center justify-center">
+                  <i class="fas fa-monument text-orange-600 text-xl"></i>
+                </div>
+                <h4 class="font-semibold mb-2">2025: El Fundador</h4>
+                <p class="text-xs">Constructor de Comunidad: orgullo-país, cultura de responsabilidad y orden con reglas</p>
+              </div>
+            </div>
+
+            <div class="mt-6 grid md:grid-cols-3 gap-4 text-sm">
+              <div class="bg-green-50 p-4 rounded">
+                <h4 class="font-semibold text-green-700 mb-2">Luz del Legado</h4>
+                <p>Protector–Guerrero–Constructor (ética, orden, productividad): presidente recordado como fundador de un ciclo de responsabilidad cívica e institucionalidad confiable</p>
+              </div>
+              <div class="bg-red-50 p-4 rounded">
+                <h4 class="font-semibold text-red-700 mb-2">Sombra a Evitar</h4>
+                <p>Inocente–Aislado (indolencia frente a desorden; bondad que puede volverse debilidad): riesgo de que el legado se vea como gestión cosmética sin resultados tangibles</p>
+              </div>
+              <div class="bg-blue-50 p-4 rounded">
+                <h4 class="font-semibold text-blue-700 mb-2">Legado Deseable</h4>
+                <p>Un presidente recordado como fundador de un ciclo de responsabilidad cívica e institucionalidad confiable, no solo como "gestor de pandemia" o "administrador del turismo"</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Implications -->
+      <section id="implications" class="section-anchor py-16 px-6 bg-gray-50">
+        <div class="max-w-4xl mx-auto">
+          <h2 class="serif text-3xl font-bold mb-8">Implicaciones Analíticas para Comunicación y Gobernanza</h2>
+
+          <div class="grid md:grid-cols-2 gap-8 mb-8">
+            <div class="bg-white p-6 rounded-lg shadow-sm">
+              <h3 class="serif text-xl font-bold mb-4 text-blue-700">Lecturas Estratégicas por Audiencia</h3>
+
+              <div class="space-y-4 text-sm">
+                <div>
+                  <h4 class="font-semibold text-blue-600">Jóvenes (&lt;35, epicentro del cambio cultural)</h4>
+                  <ul class="space-y-1 text-xs mt-2">
+                    <li><strong>Hallazgo LCI:</strong> Tránsito de denuncia/reflexión a disposición (Ruta 24 – Responsabilidad)</li>
+                    <li><strong>Claves de comunicación:</strong> Liderazgo que habilita y regula; narrativas de primer empleo, formación dual</li>
+                    <li><strong>Símbolo de orgullo-país:</strong> Turismo como espacio donde juventud conecta identidad y progreso</li>
+                    <li><strong>Riesgo:</strong> Si no se traduce en oportunidades, se reabre crítica de abandono → cinismo</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h4 class="font-semibold text-pink-600">Mujeres (cruce transversal por edad y estrato)</h4>
+                  <ul class="space-y-1 text-xs mt-2">
+                    <li><strong>Hallazgo LCI:</strong> Alta sensibilidad a precios/canasta, seguridad barrial, servicios básicos</li>
+                    <li><strong>Claves de comunicación:</strong> Mensajes de alivio micro; visibilización de políticas de cuidado</li>
+                    <li><strong>Conexión estratégica:</strong> Vincular anticorrupción a mejor uso de recursos públicos</li>
+                    <li><strong>Riesgo:</strong> Percibirse como receptoras pasivas sin resultados prácticos</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h4 class="font-semibold text-green-600">Estratos medios y bajos (núcleo del juicio ciudadano)</h4>
+                  <ul class="space-y-1 text-xs mt-2">
+                    <li><strong>Hallazgo LCI:</strong> Sostienen tensión entre autoconsumo ("resolver") y autocrítica (necesidad de disciplina)</li>
+                    <li><strong>Claves de comunicación:</strong> Mostrar trazabilidad meta→acción→resultado; integrar ética pública con eficacia operativa</li>
+                    <li><strong>Impacto:</strong> Conectar anticorrupción con alivio micro: más ingresos disponibles, servicios visibles</li>
+                    <li><strong>Riesgo:</strong> Discurso abstracto refuerza idea de "el presidente bien, pero el gobierno no sirve"</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-sm">
+              <h3 class="serif text-xl font-bold mb-4 text-purple-700">Puntos de Convergencia Estado ↔ Ciudadano</h3>
+
+              <div class="space-y-4 text-sm">
+                <div>
+                  <h4 class="font-semibold mb-2">Tensión Estructural: Dos Posturas de Gobernanza</h4>
+                  <div class="grid md:grid-cols-2 gap-4 text-xs">
+                    <div class="bg-blue-50 p-3 rounded">
+                      <strong>"Proteger y controlar"</strong> (rol paternalista)
+                      <ul class="mt-1 space-y-1">
+                        <li>• Dominante en pandemia (2020–2021)</li>
+                        <li>• Expectativa de protección total frente a crisis</li>
+                        <li>• Refuerza figura del Protector, pero a costa de dependencia</li>
+                      </ul>
+                    </div>
+                    <div class="bg-green-50 p-3 rounded">
+                      <strong>"Facilitar y regular"</strong> (rol habilitador)
+                      <ul class="mt-1 space-y-1">
+                        <li>• Emergente desde 2022, consolidado en 2024–2025</li>
+                        <li>• Ciudadano acepta responsabilidad si Estado garantiza reglas</li>
+                        <li>• Refuerza figura del Catalizador y cultura de corresponsabilidad</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <h4 class="font-semibold mb-2">Convergencia Identificada por LCI</h4>
+                  <p class="text-xs">El Estado conserva legitimidad cuando articula ambos planos:</p>
+                  <ul class="space-y-1 text-xs mt-2">
+                    <li>• <strong>Proteger</strong> (precios, seguridad, servicios básicos) → pruebas de alivio micro</li>
+                    <li>• <strong>Facilitar y regular</strong> (empleo juvenil, turismo-productividad, justicia cercana) → catalizador del cambio cultural</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h4 class="font-semibold mb-2">Implicación Estratégica</h4>
+                  <div class="bg-purple-50 p-3 rounded text-xs">
+                    <p>La comunicación debe presentar al presidente como <strong>doble figura</strong>:</p>
+                    <ul class="mt-1 space-y-1">
+                      <li>• <strong>Protector con disciplina</strong> (garantiza orden y cuidado)</li>
+                      <li>• <strong>Habilitador de ciudadanía</strong> (activa agencia individual y colectiva)</li>
+                    </ul>
+                    <p class="mt-2">La gobernanza se fortalece cuando los ciudadanos perciben que no deben elegir entre protección o libertad, sino que ambas conviven bajo reglas claras</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-gradient-to-r from-blue-50 to-purple-50 p-6 rounded-lg">
+            <h3 class="serif text-xl font-bold mb-4">Marco Teórico y Referencias Clave</h3>
+            <div class="grid md:grid-cols-3 gap-4 text-xs">
+              <div>
+                <h4 class="font-semibold mb-2 text-blue-700">Gobernanza y Cultura Cívica</h4>
+                <ul class="space-y-1">
+                  <li>• Almond & Verba, <em>The Civic Culture</em> (1963)</li>
+                  <li>• Norris, <em>Critical Citizens / Democratic Deficit</em> (1999/2011)</li>
+                  <li>• Inglehart & Welzel, <em>Modernization, Cultural Change</em> (2005)</li>
+                  <li>• Rothstein & Uslaner, <em>World Politics</em> (2005)</li>
+                  <li>• Ostrom, <em>Governing the Commons</em> (1990)</li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="font-semibold mb-2 text-green-700">Psicología Política y Comunicación</h4>
+                <ul class="space-y-1">
+                  <li>• Jung, <em>Collected Works Vol. 9i</em> (arquetipos)</li>
+                  <li>• Entman, <em>Journal of Communication</em> (1993) - framing</li>
+                  <li>• Lakoff & Johnson, <em>Metaphors We Live By</em> (1980)</li>
+                  <li>• Zaltman & Coulter, aplicaciones ZMET</li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="font-semibold mb-2 text-purple-700">Políticas Públicas Específicas</h4>
+                <ul class="space-y-1">
+                  <li>• UNODC, <em>Handbook on Police Accountability</em> (2011)</li>
+                  <li>• IOM, <em>MiGOF</em> (2015) - migración</li>
+                  <li>• ILO, <em>Global Employment Trends for Youth</em> (2020)</li>
+                  <li>• UNWTO/UNDP, <em>Tourism & SDGs</em></li>
+                  <li>• OSCE, <em>Guidebook on Democratic Policing</em></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="py-8 px-6 bg-gray-800 text-white">
+        <div class="max-w-4xl mx-auto text-center">
+          <p class="text-sm opacity-75">
+            Análisis estratégico basado en investigación longitudinal cualitativa y cuantitativa.
+            <br>
+            Metodología integrada LCI+LOCUS aplicada a la realidad política dominicana 2020-2025.
+          </p>
+          <div class="mt-4 flex justify-center space-x-6 text-xs opacity-50">
+            <span>Casa de Investigación</span>
+            <span>•</span>
+            <span>República Dominicana</span>
+            <span>•</span>
+            <span>2025</span>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <script>
+        // Mobile menu toggle
+        function toggleTOC() {
+            const toc = document.querySelector('.toc-fixed');
+            toc.classList.toggle('open');
+        }
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    
+                    // Close mobile menu after clicking
+                    if (window.innerWidth < 1024) {
+                        document.querySelector('.toc-fixed').classList.remove('open');
+                    }
+                }
+            });
+        });
+
+        // Add mobile menu button on small screens
+        if (window.innerWidth < 1024) {
+            const menuButton = document.createElement('button');
+            menuButton.innerHTML = '<i class="fas fa-bars"></i>';
+            menuButton.className = 'fixed top-4 left-4 z-50 bg-blue-600 text-white p-3 rounded-lg shadow-lg lg:hidden';
+            menuButton.onclick = toggleTOC;
+            document.body.appendChild(menuButton);
+        }
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', function(event) {
+            const toc = document.querySelector('.toc-fixed');
+            const menuButton = document.querySelector('button[onclick="toggleTOC()"]');
+            
+            if (window.innerWidth < 1024 && 
+                toc && 
+                toc.classList.contains('open') && 
+                !toc.contains(event.target) && 
+                (!menuButton || !menuButton.contains(event.target))) {
+                toc.classList.remove('open');
+            }
+        });
+    </script>
+  </body>
+
+</html>
