@@ -27,15 +27,31 @@
             background: var(--base-100);
             overflow-x: hidden;
         }
-        .banner {
+       .banner {
   display: flex;
   align-items: center;
+  justify-content: center; /* centra el contenido */
   gap: 20px;
   padding: 20px;
   background: var(--primary);
   color: white;
-  justify-content: space-between;
-  flex-direction: row-reverse;
+  position: relative; /* para poder posicionar el logo */
+}
+
+.banner .logo {
+  height: 60px;
+  width: auto;
+  position: absolute;  /* lo sacamos del flujo */
+  right: 20px;         /* pegado al borde derecho */
+  top: 50%;
+  transform: translateY(-50%); /* centrado vertical */
+}
+
+.banner div {
+  text-align: center; /* centra el texto */
+  max-width: 70%;     /* evita que se pegue demasiado al logo */
+}
+
 }
 
 .banner .logo {
