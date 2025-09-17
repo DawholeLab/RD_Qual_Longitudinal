@@ -29,13 +29,16 @@
         }
        .banner {
   display: flex;
-  align-items: center;
-  justify-content: center; /* centra el contenido */
-  gap: 20px;
+  justify-content: center;   /* centra horizontal */
+  align-items: center;       /* centra vertical */
   padding: 20px;
   background: var(--primary);
   color: white;
-  position: relative; /* para poder posicionar el logo */
+  text-align: center;        /* centra el texto */
+}
+
+.banner div {
+  max-width: 80%;            /* evita que el texto se pegue a los bordes */
 }
 
 .banner .logo {
