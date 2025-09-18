@@ -27,7 +27,7 @@
             background: var(--base-100);
             overflow-x: hidden;
         }
-       .banner {
+      .banner {
   display: flex;
   justify-content: center;   /* centra horizontal */
   align-items: center;       /* centra vertical */
@@ -35,32 +35,44 @@
   background: var(--primary);
   color: white;
   text-align: center;        /* centra el texto */
+  position: relative;
 }
 
 .banner div {
-  max-width: 80%;            /* evita que el texto se pegue a los bordes */
+  max-width: 70%;
+  text-align: center;
 }
 
 .banner .logo {
   height: 60px;
   width: auto;
-  position: absolute;  /* lo sacamos del flujo */
-  right: 20px;         /* pegado al borde derecho */
+  position: absolute;   /* logo a la derecha en pantallas grandes */
+  right: 20px;
   top: 50%;
-  transform: translateY(-50%); /* centrado vertical */
+  transform: translateY(-50%);
 }
 
-.banner div {
-  text-align: center; /* centra el texto */
-  max-width: 70%;     /* evita que se pegue demasiado al logo */
+/* --- Ajustes responsive para móviles --- */
+@media (max-width: 768px) {
+  .banner {
+    flex-direction: column;     /* logo arriba, texto debajo */
+    padding: 15px;
+  }
+
+  .banner .logo {
+    position: static;           /* quita absolute en móvil */
+    transform: none;
+    margin-bottom: 10px;
+    height: 40px;               /* logo más pequeño */
+  }
+
+  .banner div {
+    max-width: 100%;
+    font-size: 0.9rem;          /* texto más compacto */
+  }
 }
 
-}
 
-.banner .logo {
-  height: 60px;
-  width: auto;
-}
         .serif {
             font-family: 'Playfair Display', serif;
         }
